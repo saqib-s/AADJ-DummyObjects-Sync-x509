@@ -12,7 +12,7 @@
 #     - certificate hash syncing 
 #
 #
-#  Script requires a enterpise app created in Azure AD with the following api permission single permission (granted for the whole tenant)
+#  Script requires an enterpise app created in Azure AD with the following api permission single permission (granted for the whole tenant)
 #  Microsoft Graph ->  DeviceManagementServiceConfig.Read.All  ->  Application ->  Read Microsoft Intune configuration
 #  Create a client secret in the app and use this to run the script. 
 #
