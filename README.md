@@ -6,7 +6,7 @@
  Script to connect to AzureAD and pull all Autopilot devcies and create 'dummy' computer objects in specified OU
  and then run certificates hash synch to query all domain CA's and locate certificate hash and add to altSecurityIdentities attribute
 
- This script has pulled together from the work of:
+ This script has been pulled together from the work of:
  
   1. Andrew Blackburn @ sysmansquad  - https://sysmansquad.com/2021/04/27/working-around-nps-limitations-for-aadj-windows-devices/
      - connecting to Azure AD, synching computer objects to Autopilot devices (only)
