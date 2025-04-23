@@ -1,5 +1,12 @@
 # AADJ-DummyObject-Sync - Saqib Sabir - 2022-12-14 
 #
+#
+#  2025-04 Update!! Breaking change, this script was created to work with WindowsAutopilotIntune module version 5.0, the newer version have a breaking change.
+#                   This scripts needs to be update to work without the WindowsAutopilotIntune module, as we can gran the autopilot device ids from MSGraph directly.
+#
+#
+#
+#
 # Script to connect to AzureAD and pull all Autopilot devcies and create 'dummy' computer objects in specified OU
 # and then run certificates hash synch to query all domain CA's and locate certificate hash and add to altSecurityIdentities attribute
 #
@@ -64,6 +71,7 @@ Import-Module PSPKI -Scope Global
 # Import Active Directory Module - error if not installed
 # Needs to be installed manually via Server Manager if missing
 # or run following PS command  "Add-WindowsCapability -Name Rsat.ActiveDirectory.DS-LDS.Tools~~~~0.0.1.0 -Online" 
+# or run following PS command "Install-WindowsFeature -Name "RSAT-AD-PowerShell" -IncludeAllSubFeature"
 try{
     Import-Module ActiveDirectory
     $Modules = Get-Module
