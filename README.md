@@ -3,6 +3,10 @@
  
  AADJ-DummyObject-Sync - Saqib Sabir - 2022-12-14 
 
+2025-04 Update!! Breaking change, this script was created to work with WindowsAutopilotIntune module version 5.0, the newer version have a breaking change.
+This scripts needs to be update to work without the WindowsAutopilotIntune module, as we can gran the autopilot device ids from MSGraph directly.
+
+
  Script to connect to AzureAD and pull all Autopilot devcies and create 'dummy' computer objects in specified OU
  and then run certificates hash synch to query all domain CA's and locate certificate hash and add to altSecurityIdentities attribute
 
